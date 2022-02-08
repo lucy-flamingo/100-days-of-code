@@ -37,7 +37,7 @@ void main() {
     
     float checker = mod(id.x+id.y,2.)*2.-1.;
     float flow = sin(checker*angle*40.+u_time);
-    col += flow*mask;
+    col += mask;
 
     gl_FragColor = vec4(col,1.0);
 
